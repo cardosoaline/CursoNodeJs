@@ -1,0 +1,9 @@
+Controller => Regra de negocio.
+
+Routes => seria a nossa view o que tem a interação com cliente.
+
+Model => Configuração com acesso ao DB.
+
+Routes app pensar na analogia do poupatempo => filas
+
+colocar sempre no gitignore = > node_modules
