@@ -6,4 +6,4 @@ Model => Configuração com acesso ao DB.
 
 Routes app pensar na analogia do poupatempo => filas
 
-colocar sempre no gitignore = > node_modules
+colocar sempre no gitignore = > node_modules   

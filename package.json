@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cardosoaline/APIClientesNode#readme",
   "dependencies": {
+    "apidoc": "^0.18.0",
     "body-parse": "^0.1.0",
     "express": "^4.17.1",
     "mongoose": "^5.7.11",

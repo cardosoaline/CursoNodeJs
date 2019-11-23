@@ -1,21 +1,19 @@
-const mongoose = require('mongoose')
 
-//INSTANCIANDO UM NOVO SCHEMA(MODELO) caracteristicas q o objeto vai possuir
-const ClientesSchema = new mongoose.Schema({
-    nome: { type: String},
-    email:{ type: String, require:true},
-    cpf:{ type: Number},
-    dataNascimento:{ type: Date},
-    estadoCivil:{ type: String},
-    telefone:{ type: Number},
-    Comprou:{ type: Boolean}
-},{
+const mongoose = require("mongoose");
 
-    versionKey: false //Ignora a informação no banco ou seja não mostra!
-
+const clienteSchema = new mongoose.Schema({
+    nome: {type: String, required: true},
+    email: {type: String},
+    cpf: {type: Number},
+    dataNascimento: {type: String},
+    estadoCivil: {type: String},
+    telefone: {type: Number},
+    comprou:{type: Boolean}
+}, 
+{
+        versionKey: false
 })
 
-const Clientes = mongoose.model('Clientes',ClientesSchema);
-
+const Clientes = mongoose.model('Cliente', clienteSchema);
 
 module.exports = Clientes;
